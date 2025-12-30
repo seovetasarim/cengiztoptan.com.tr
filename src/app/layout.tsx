@@ -10,7 +10,7 @@ const sourceSans = Source_Sans_3({
 
 export const metadata: Metadata = {
   title: "Cengiz Toptan | Toptan Çocuk Giyim - Çocuk Mont, Çocuk Bot Toptancısı",
-  description: "Cengiz Toptan - Toptan çocuk mont, toptan çocuk bot, toptan çocuk giyim ürünleri. 2019-2020 dönemi ticari ilişkiler hakkında resmi bilgilendirme ve kamuoyu duyurusu. cengiztoptan.com",
+  description: "Cengiz Toptan - Toptan çocuk mont, toptan çocuk bot, toptan çocuk giyim ürünleri. 2020-2021 dönemi ticari ilişkiler hakkında resmi bilgilendirme ve kamuoyu duyurusu. cengiztoptan.com",
   keywords: "toptan çocuk mont, toptan çocuk bot, çocuk giyim toptan, toptan çocuk kıyafet, çocuk mont toptancısı, çocuk bot toptancısı, cengiz toptan, cengiztoptan, toptan bebek giyim, çocuk giyim toptancıları, istanbul toptan çocuk giyim, toptan kışlık çocuk giyim, toptan çocuk ayakkabı",
   authors: [{ name: "Cengiz Toptan" }],
   creator: "Cengiz Toptan",

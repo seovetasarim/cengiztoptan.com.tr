@@ -42,32 +42,32 @@ export default function Home() {
             </header>
 
             {/* İçerik */}
-            <div className="space-y-8 text-neutral-300 leading-relaxed text-base sm:text-lg" itemProp="articleBody">
-              <p className="text-justify sm:text-left">
-                Bu sayfa, 2019–2020 yıllarında <strong>Cengiz Toptan</strong> (cengiztoptan.com / cengiztoptan.com.tr) ile ticari ilişkide bulunmuş kişi ve kurumlara yönelik bilgilendirme amacıyla hazırlanmıştır.
+            <div className="space-y-6 text-neutral-300 leading-relaxed text-base sm:text-lg" itemProp="articleBody">
+              <p>
+                Bu sayfa, 2020–2021 yıllarında <strong>Cengiz Toptan</strong> (cengiztoptan.com / cengiztoptan.com.tr) ile ticari ilişkide bulunmuş kişi ve kurumlara yönelik bilgilendirme amacıyla hazırlanmıştır.
               </p>
 
-              <p className="text-justify sm:text-left">
+              <p>
                 Pandemi döneminde yaşanan olağanüstü ekonomik koşullar sebebiyle firmamız faaliyetlerini durdurmak zorunda kalmıştır. Bu süreçte, ailemizin desteğiyle ticari yükümlülüklerin büyük bölümü yerine getirilmiştir.
               </p>
 
-              <p className="text-justify sm:text-left">
+              <p>
                 Buna rağmen; iletişim kurulamamış, gözden kaçmış veya tam mutabakat sağlanamamış alacaklar bulunabileceği ihtimali göz önünde bulundurularak bu duyuru yapılmaktadır.
               </p>
 
-              <p className="text-justify sm:text-left">
-                2019–2020 dönemine ait alacağı olduğunu düşünen kişi ve kurumların, dekont, fatura veya yazılı belge ile birlikte tarafımıza başvurması rica olunur. Belgeli başvurular titizlikle incelenecek, haklı talepler için karşılıklı mutabakat esas alınacaktır.
+              <p>
+                2020–2021 dönemine ait alacağı olduğunu düşünen kişi ve kurumların, dekont, fatura veya yazılı belge ile birlikte tarafımıza başvurması rica olunur. Belgeli başvurular titizlikle incelenecek, haklı talepler için karşılıklı mutabakat esas alınacaktır.
               </p>
 
-              <p className="text-justify sm:text-left">
+              <p>
                 Ancak açıkça ifade edilmelidir ki; bu zorlu süreçte iyi niyetle ticaret yapmaya çalışan birçok kişi ve işletme, krizi fırsata çevirmeye çalışan, etik ve ahlaki sorumluluklardan uzak, başkalarının emeği üzerinden algı oluşturmaya çalışan kişiler nedeniyle mağdur edilmiştir.
               </p>
 
-              <p className="text-justify sm:text-left">
+              <p>
                 Firmamız; iftira, karalama ve belgeye dayanmayan iddialarla ticaret anlayışını benimseyenleri hiçbir zaman muhatap almamış, her koşulda şeffaflık ve hesap verebilirlik ilkesini esas almıştır.
               </p>
 
-              <p className="text-justify sm:text-left">
+              <p>
                 Bu duyurunun amacı; geçmiş döneme ait ticari ilişkileri adil, belgeli ve hukuka uygun şekilde sonuçlandırmaktır. Belgeye dayanmayan, algı oluşturmaya yönelik başvurular dikkate alınmayacaktır.
               </p>
             </div>
