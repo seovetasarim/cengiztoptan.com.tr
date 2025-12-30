@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://cengiztoptan.com/sitemap.xml
+
+# Cengiz Toptan - Toptan Cocuk Mont, Toptan Cocuk Bot
+# cengiztoptan.com - cengiztoptan.com.tr
+
