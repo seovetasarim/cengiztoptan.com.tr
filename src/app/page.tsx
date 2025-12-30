@@ -1,7 +1,66 @@
+"use client";
+
+import Image from "next/image";
+
+// Papatya komponenti
+const Daisy = ({ className = "", size = 40 }: { className?: string; size?: number }) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 100 100"
+    className={className}
+  >
+    {/* Yapraklar */}
+    {[0, 45, 90, 135, 180, 225, 270, 315].map((angle) => (
+      <ellipse
+        key={angle}
+        cx="50"
+        cy="25"
+        rx="12"
+        ry="22"
+        fill="white"
+        fillOpacity="0.9"
+        transform={`rotate(${angle} 50 50)`}
+      />
+    ))}
+    {/* Orta sarı kısım */}
+    <circle cx="50" cy="50" r="15" fill="#fbbf24" />
+    <circle cx="50" cy="50" r="10" fill="#f59e0b" />
+  </svg>
+);
+
 export default function Home() {
   return (
-    <main className="min-h-screen bg-black text-white">
-      {/* SEO için gizli içerik - Arama motorları okur, kullanıcılar görmez */}
+    <main className="min-h-screen bg-black text-white relative overflow-hidden">
+      {/* Dönen Papatyalar */}
+      <div className="fixed inset-0 pointer-events-none z-0 overflow-hidden">
+        {/* Sol üst */}
+        <div className="absolute -top-10 -left-10 animate-spin-slow opacity-20">
+          <Daisy size={120} />
+        </div>
+        {/* Sağ üst */}
+        <div className="absolute -top-5 -right-5 animate-spin-slow-reverse opacity-15">
+          <Daisy size={80} />
+        </div>
+        {/* Sol alt */}
+        <div className="absolute -bottom-10 -left-5 animate-spin-slow-reverse opacity-15">
+          <Daisy size={100} />
+        </div>
+        {/* Sağ alt */}
+        <div className="absolute -bottom-5 -right-10 animate-spin-slow opacity-20">
+          <Daisy size={90} />
+        </div>
+        {/* Orta sol */}
+        <div className="absolute top-1/3 -left-8 animate-spin-slow opacity-10">
+          <Daisy size={60} />
+        </div>
+        {/* Orta sağ */}
+        <div className="absolute top-1/2 -right-8 animate-spin-slow-reverse opacity-10">
+          <Daisy size={70} />
+        </div>
+      </div>
+
+      {/* SEO için gizli içerik */}
       <div className="sr-only">
         <h2>Cengiz Toptan - Toptan Çocuk Giyim Toptancısı</h2>
         <p>Toptan çocuk mont satışı yapan güvenilir tedarikçi. Toptan çocuk bot ve çocuk ayakkabı toptancısı.</p>
@@ -22,19 +81,27 @@ export default function Home() {
       </div>
 
       {/* İçerik */}
-      <div className="min-h-screen flex flex-col">
-        <div className="flex-1 flex items-center justify-center px-4 sm:px-6 md:px-8 lg:px-16 py-12">
+      <div className="min-h-screen flex flex-col relative z-10">
+        <div className="flex-1 flex items-center justify-center px-4 sm:px-6 md:px-8 lg:px-16 pt-0 pb-12">
           <article className="w-full max-w-3xl mx-auto" itemScope itemType="https://schema.org/Article">
-            {/* Header */}
-            <header className="mb-12 text-center sm:text-left">
-              <div className="text-base sm:text-lg font-semibold tracking-wide" itemProp="publisher">
-                CENGİZ TOPTAN
+            {/* Header - Logo */}
+            <header className="-mb-8 flex justify-center">
+              <div itemProp="publisher">
+                <Image
+                  src="/68a5dc19-7897-458b-a60f-9c92308a91a9-Photoroom.png"
+                  alt="Cengiz Toptan Logo"
+                  width={500}
+                  height={180}
+                  className="w-72 sm:w-96 md:w-[450px] h-auto"
+                  priority
+                  quality={100}
+                />
               </div>
-              <h2 className="sr-only">Toptan Çocuk Mont ve Toptan Çocuk Bot Satışı - Çocuk Giyim Toptancısı</h2>
+              <h2 className="sr-only">Cengiz Toptan - Toptan Çocuk Mont ve Toptan Çocuk Bot Satışı - Çocuk Giyim Toptancısı</h2>
             </header>
 
             {/* Ana Başlık */}
-            <header className="mb-12 pb-8 border-b border-neutral-800">
+            <header className="mb-10 pb-8 border-b border-neutral-800">
               <h1 className="text-xl sm:text-2xl md:text-3xl font-semibold leading-tight text-center sm:text-left" itemProp="headline">
                 Geçmiş Dönem Bilgilendirme ve Kamuoyu Duyurusu
               </h1>
@@ -95,7 +162,7 @@ export default function Home() {
         </div>
 
         {/* Footer */}
-        <footer className="px-4 sm:px-6 md:px-8 lg:px-16 py-8 border-t border-neutral-800">
+        <footer className="px-4 sm:px-6 md:px-8 lg:px-16 py-8 border-t border-neutral-800 relative z-10">
           <div className="max-w-3xl mx-auto space-y-3 text-center sm:text-left">
             <p className="text-xs sm:text-sm text-neutral-600">
               Bu site herhangi bir ticari faaliyet, satış veya pazarlama amacı taşımamaktadır.
